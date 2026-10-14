@@ -148,7 +148,7 @@ npm start
 | :--- | :--- | :--- |
 | **Mohammad Jubaid** | ITM University Gwalior | Team Leader & AI Architecture Specialist |
 | **Ayan Khan** | ITM University Gwalior | Backend Systems & Deterministic Math Engine |
-| **Arjun Singh Bhadoriya** | ITM University Gwalior | Geospatial Engineering & Data Stewardship |
+| **Arjun Singh Bhadoriya** | MITS Gwalior | Geospatial Engineering & Data Stewardship |
 | **Mohith Ch** | ITM University Gwalior | Frontend Architecture & Bento UI/UX Design |
 
 ---
