@@ -1,0 +1,29 @@
+{
+  "name": "time-aware-tourism-gwalior",
+  "version": "1.0.0",
+  "description": "Time-Aware Digital Discoverability: Beyond the Fort - Team Venator (ID: 60358412) AI Synergy Hackathon 2026",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/acceptanceTests.test.js"
+  },
+  "keywords": [
+    "hackathon",
+    "ai-synergy-2026",
+    "time-aware",
+    "gwalior",
+    "gemini",
+    "deterministic-math",
+    "tourism"
+  ],
+  "author": "Team Venator (ID: 60358412)",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
