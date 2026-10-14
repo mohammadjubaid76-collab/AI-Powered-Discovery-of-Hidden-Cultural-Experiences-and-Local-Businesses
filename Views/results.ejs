@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Header -->
+    <header class="header-bar">
+      <a href="/" class="btn-secondary">
+        <span>&larr; Modify Search Parameters</span>
+      </a>
+      <div class="pill-badge coral">
+        <span>Team Venator (ID: 60358412)</span>
+      </div>
+    </header>
+
+    <!-- Results Banner -->
+    <div class="bento-card" style="margin-bottom: 24px; background: linear-gradient(135deg, #EFF6FF 0%, #FFFFFF 100%);">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <div class="pill-badge" style="margin-bottom: 8px;">
+            <span>🤖 Gemini 1.5 Flash Intent Parse</span>
+          </div>
+          <h2><%= results.length %> Feasible Cultural Experiences Discovered</h2>
+          <p style="color: var(--text-muted);">
+            Query: &ldquo;<%= query %>&rdquo; &bull; Origin: <strong><%= origin.label %></strong>
+          </p>
+        </div>
+
+        <div style="text-align: right; background: #FFFFFF; padding: 12px 18px; border-radius: 12px; border: 1px solid var(--card-border);">
+          <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Time Window Budget</div>
+          <div style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; font-weight: 700; color: var(--accent-blue);">
+            <%= timeBudgetHours %> Hours (<%= timeBudgetMinutes %> min)
+          </div>
+          <div style="font-size: 0.75rem; color: var(--accent-coral); font-weight: 600;">Includes +25% Safety Buffer</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feasible Results Grid -->
+    <% if (results && results.length > 0) { %>
+      <div class="results-grid">
+        <% results.forEach(poi => { %>
+          <div class="poi-card">
+            <div>
+              <div class="poi-header">
+                <div>
+                  <span class="category-tag"><%= poi.category %></span>
+                  <h3 style="margin-top: 8px;"><%= poi.name %></h3>
+                  <div class="hindi-title"><%= poi.hindiName %></div>
+                </div>
+                <div class="status-pill verified">
+                  <span>&check; <%= poi.verification_status %></span>
+                </div>
+              </div>
+
+              <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 12px;">
+                <%= poi.description %>
+              </p>
+
+              <!-- Transit verification tag -->
+              <div style="margin-bottom: 12px;">
+                <% if (poi.is_transit_verified) { %>
+                  <span class="status-pill verified">
+                    <span>📡 <%= poi.transit_verification_tag %></span>
+                  </span>
+                <% } else { %>
+                  <span class="status-pill unverified">
+                    <span>⚠️ <%= poi.transit_verification_tag %></span>
+                  </span>
+                <% } %>
+                <span style="font-size: 0.8rem; color: var(--text-muted); margin-left: 8px;">
+                  <%= poi.calculated_distance_km %> km from Fort
+                </span>
+              </div>
+
+              <!-- Mathematical Feasibility Envelope Box -->
+              <div class="math-envelope-box">
+                <div class="math-envelope-header">
+                  <span>TIME ENVELOPE BREAKDOWN</span>
+                  <span>T_total &le; <%= timeBudgetMinutes %>m</span>
+                </div>
+                
+                <div class="math-breakdown">
+                  <div class="math-col">
+                    <div class="num"><%= poi.feasibility.t_outbound %>m</div>
+                    <div class="label">Outbound</div>
+                  </div>
+                  <div class="math-col">
+                    <div class="num"><%= poi.feasibility.t_visit %>m</div>
+                    <div class="label">Dwell</div>
+                  </div>
+                  <div class="math-col">
+                    <div class="num"><%= poi.feasibility.t_return %>m</div>
+                    <div class="label">Return</div>
+                  </div>
+                  <div class="math-col">
+                    <div class="num" style="color: var(--accent-coral);">+<%= poi.feasibility.t_buffer %>m</div>
+                    <div class="label">Buffer (25%)</div>
+                  </div>
+                </div>
+
+                <div class="total-slack-bar">
+                  <div class="total-time">
+                    Total Required: <strong><%= poi.feasibility.t_total %> mins</strong>
+                  </div>
+                  <div class="slack">
+                    +<%= poi.feasibility.slack_minutes %> mins Slack
+                  </div>
+                </div>
+              </div>
+
+              <!-- Community Guidelines & Highlights -->
+              <div style="font-size: 0.85rem; color: var(--text-muted);">
+                <strong>Artisan Guidelines:</strong>
+                <ul style="margin-left: 18px; margin-top: 4px;">
+                  <% (poi.community_rules || []).forEach(rule => { %>
+                    <li><%= rule %></li>
+                  <% }) %>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Footer Details -->
+            <div style="margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-muted);">
+              <div>Open: <%= poi.operating_hours.open %> &ndash; <%= poi.operating_hours.close %></div>
+              <div>Audited: <%= poi.last_audited %></div>
+            </div>
+
+          </div>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <!-- Zero Results / Infeasible State -->
+      <div class="bento-card" style="text-align: center; padding: 48px 24px;">
+        <div style="font-size: 2.5rem; margin-bottom: 12px;">⏱️</div>
+        <h2>No Cultural Candidates Satisfy the Strict Time Limit</h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 24px auto;">
+          Our deterministic mathematical engine strictly pruned all candidates because their total travel, dwell time, and 25% safety buffer exceeded your available budget of <strong><%= timeBudgetMinutes %> minutes</strong>.
+        </p>
+        <a href="/" class="btn-primary">
+          <span>Increase Available Time Window &rarr;</span>
+        </a>
+      </div>
+    <% } %>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <strong>Team Venator</strong> (ID: 60358412) • ITM University Gwalior
+      </div>
+      <div>
+        AI Synergy Hackathon 2026 • Deterministic Mathematical Feasibility Engine
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

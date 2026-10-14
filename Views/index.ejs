@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Top Header Bar -->
+    <header class="header-bar">
+      <div class="pill-badge">
+        <span>🚀 AI Synergy Hackathon 2026 • Round 1</span>
+      </div>
+      <div class="pill-badge coral">
+        <span>Team Venator (ID: 60358412)</span>
+      </div>
+    </header>
+
+    <!-- Hero Title -->
+    <div>
+      <h1>Time-Aware Digital Discoverability</h1>
+      <p class="subtitle">Tourism Beyond the Fort — Connecting Day Visitors with Authenticated Cultural Artisans Within Strict Time Windows</p>
+    </div>
+
+    <!-- Bento Grid Layout -->
+    <div class="bento-grid">
+      
+      <!-- Primary Search Card (Span 8) -->
+      <div class="bento-card bento-col-8">
+        <h2>Plan Cultural Detour</h2>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">
+          Origin: <strong><%= defaultOrigin.label %></strong> (Gwalior Micro-Corridor)
+        </p>
+
+        <form action="/search" method="POST" class="search-form">
+          <div class="input-group">
+            <label for="queryInput">What would you like to experience?</label>
+            <input 
+              type="text" 
+              id="queryInput" 
+              name="query" 
+              class="query-input" 
+              placeholder="e.g. Mujhe local khana khana hai (Hindi / Hinglish / English)"
+              value="Mujhe local authentic khana aur Chanderi weavers dekhna hai"
+              required
+            >
+          </div>
+
+          <!-- Quick Category Chips -->
+          <div class="chips-container">
+            <span class="chip" data-query="Mujhe traditional Bedai aur Gajak khana hai">🍲 Authentic Culinary (Bedai & Gajak)</span>
+            <span class="chip" data-query="Mujhe Chanderi weavers pit loom dekhna hai">🧵 Chanderi Silk Weavers</span>
+            <span class="chip" data-query="Tansen classical Dhrupad music academy">🎵 Tansen Music Academy</span>
+            <span class="chip" data-query="Sarafa lacquer and silver jewellery artisans">💍 Sarafa Lacquer Jewellery</span>
+          </div>
+
+          <!-- Time Budget Slider -->
+          <div class="slider-container">
+            <div class="slider-header">
+              <label style="margin: 0;">Available Time Window (T_available)</label>
+              <div id="sliderDisplay" class="slider-value">3.0 Hours (180 min)</div>
+            </div>
+            <input 
+              type="range" 
+              id="timeBudgetSlider" 
+              name="time_budget_hours" 
+              min="1.0" 
+              max="8.0" 
+              step="0.5" 
+              value="3.0"
+            >
+            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted);">
+              <span>1.0 Hour (Quick Detour)</span>
+              <span>4.0 Hours (Half Day)</span>
+              <span>8.0 Hours (Full Day)</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            <span>⚡ Verify Deterministic Feasibility</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Feasibility Architecture Card (Span 4) -->
+      <div class="bento-card bento-col-4" style="background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);">
+        <div class="pill-badge" style="margin-bottom: 14px;">
+          <span>📐 Mathematical Model</span>
+        </div>
+        <h3>Strict Feasibility Inequality</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">
+          A candidate place is recommended <em>if and only if</em> the total time envelope fits within your schedule:
+        </p>
+
+        <div style="background: #1E293B; color: #F8FAFC; padding: 14px; border-radius: 8px; font-family: monospace; font-size: 0.85rem; line-height: 1.5; margin-bottom: 16px;">
+          T_outbound + T_return + T_visit + T_buffer &le; T_available
+        </div>
+
+        <div style="background: var(--accent-coral-light); border: 1px solid #FECDD3; padding: 12px; border-radius: 8px; font-size: 0.85rem; color: #991B1B;">
+          <strong>Mandatory 25% Safety Buffer:</strong><br>
+          T_buffer = 0.25 &times; (T_roundtrip + T_visit)<br>
+          Protects visitors from transit delays.
+        </div>
+      </div>
+
+      <!-- System Decoupling Card (Span 12) -->
+      <div class="bento-card bento-col-12">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+          <h2>Decoupled 3-Tier System Governance</h2>
+          <div class="pill-badge green">
+            <span>Curated Gwalior Pilot: <%= poiCount %> Active Cultural Sites</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+          <div style="padding: 16px; background: #F8FAFC; border-radius: 12px; border: 1px solid #E2E8F0;">
+            <div style="font-weight: 700; color: var(--accent-blue); margin-bottom: 6px;">Tier 1: Multilingual AI NLP</div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              <strong>Google Gemini 1.5 Flash</strong> extracts semantic category, origin, and time intent from Hindi/Hinglish text. Gemini is strictly prohibited from inventing places or travel times.
+            </p>
+          </div>
+
+          <div style="padding: 16px; background: #F8FAFC; border-radius: 12px; border: 1px solid #E2E8F0;">
+            <div style="font-weight: 700; color: var(--accent-coral); margin-bottom: 6px;">Tier 2: Node.js Math Engine</div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              Evaluates deterministic travel-space arithmetic, applies the 25% safety buffer, and rigidly prunes candidate POIs that violate schedule boundaries.
+            </p>
+          </div>
+
+          <div style="padding: 16px; background: #F8FAFC; border-radius: 12px; border: 1px solid #E2E8F0;">
+            <div style="font-weight: 700; color: var(--accent-green); margin-bottom: 6px;">Tier 3: Curated Heritage Data</div>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">
+              MongoDB geospatial store containing authenticated master weavers, confectioners, and luthiers situated 3&ndash;8 km outside the tourist fort bubble.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <strong>Team Venator</strong> (ID: 60358412) • ITM University Gwalior
+      </div>
+      <div>
+        AI Synergy Hackathon 2026 • Theme 04: Tourism Beyond the Fort
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
