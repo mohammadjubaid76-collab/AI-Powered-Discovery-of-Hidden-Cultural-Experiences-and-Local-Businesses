@@ -1,0 +1,230 @@
+[
+  {
+    "id": "poi_gwl_001",
+    "name": "Chanderi Weavers Cluster - Kripalpur",
+    "hindiName": "चंदेरी बुनकर क्लस्टर (कृपालपुर)",
+    "category": "crafts",
+    "subCategory": "textile_weaving",
+    "description": "Authentic master weavers crafting genuine Chanderi silk and cotton sarees on traditional pit looms.",
+    "coordinates": { "lat": 26.2150, "lng": 78.1685 },
+    "distance_from_fort_km": 3.8,
+    "min_dwell_time_mins": 45,
+    "operating_hours": { "open": "10:00", "close": "18:00" },
+    "verification_status": "VERIFIED_OWNER",
+    "last_audited": "2026-08-15",
+    "community_rules": [
+      "Photography permitted with loom master's verbal consent",
+      "Direct ethical purchase from artisan without middleman commission"
+    ],
+    "highlights": ["Pit loom live demonstration", "Pure gold Zari work", "Direct artisan pricing"]
+  },
+  {
+    "id": "poi_gwl_002",
+    "name": "Naya Bazar Heritage Culinary Lane - SS Kachori & Bedai",
+    "hindiName": "नया बाज़ार बेड़ई एवं कचौड़ी परंपरा",
+    "category": "culinary",
+    "subCategory": "traditional_breakfast",
+    "description": "Century-old culinary landmark preparing Urad-dal stuffed Bedai with spicy hing potato sabzi and sweet jalebis.",
+    "coordinates": { "lat": 26.2088, "lng": 78.1610 },
+    "distance_from_fort_km": 4.5,
+    "min_dwell_time_mins": 30,
+    "operating_hours": { "open": "07:00", "close": "14:30" },
+    "verification_status": "VERIFIED_AUDITOR",
+    "last_audited": "2026-09-01",
+    "community_rules": [
+      "Peak morning rush between 08:30 and 10:30",
+      "Fresh batches fried every 15 minutes"
+    ],
+    "highlights": ["Authentic hing potato gravy", "Desi ghee jalebis", "Historical recipe since 1912"]
+  },
+  {
+    "id": "poi_gwl_003",
+    "name": "Maharaj Bada Heritage Stone & Metal Crafts Cluster",
+    "hindiName": "महाराज बाड़ा पारंपरिक धातु एवं पाषाण शिल्पी",
+    "category": "crafts",
+    "subCategory": "brass_and_stone",
+    "description": "Traditional metalsmiths casting brass idols and hand-carving sandstone lattice screens (Jaalis).",
+    "coordinates": { "lat": 26.2035, "lng": 78.1580 },
+    "distance_from_fort_km": 4.9,
+    "min_dwell_time_mins": 40,
+    "operating_hours": { "open": "11:00", "close": "19:30" },
+    "verification_status": "VERIFIED_OWNER",
+    "last_audited": "2026-08-20",
+    "community_rules": [
+      "No machine replica resale; certified hand-cast pieces only",
+      "Workshop visits require guided entry"
+    ],
+    "highlights": ["Sandstone filigree carving", "Dhokra lost-wax brass casting", "Architectural salvage pieces"]
+  },
+  {
+    "id": "poi_gwl_004",
+    "name": "Tansen Sangeet Kala Kendra & Gwalior Gharana Archives",
+    "hindiName": "तानसेन संगीत कला केंद्र एवं ग्वालियर घराना अभिलेखागार",
+    "category": "music",
+    "subCategory": "classical_music",
+    "description": "Living heritage academy of Indian classical Dhrupad music honoring Mian Tansen's lineage.",
+    "coordinates": { "lat": 26.2212, "lng": 78.1920 },
+    "distance_from_fort_km": 3.4,
+    "min_dwell_time_mins": 50,
+    "operating_hours": { "open": "10:30", "close": "17:30" },
+    "verification_status": "VERIFIED_AUDITOR",
+    "last_audited": "2026-07-28",
+    "community_rules": [
+      "Silence mandatory during Riyaz practice hours",
+      "Shoe removal required at archive sanctum"
+    ],
+    "highlights": ["Dhrupad vocal demonstrations", "Historical tanpura collection", "Gwalior Gharana genealogies"]
+  },
+  {
+    "id": "poi_gwl_005",
+    "name": "Bada Post Office Lane - Pure Gwaliori Gajak Roasters",
+    "hindiName": "बाड़ा गजक रोस्टर्स - मुरैना एवं ग्वालियर परंपरा",
+    "category": "culinary",
+    "subCategory": "artisanal_confectionery",
+    "description": "Master confectioners hand-pounding roasted sesame seeds, jaggery, and cardamom in heavy iron mortars.",
+    "coordinates": { "lat": 26.2045, "lng": 78.1572 },
+    "distance_from_fort_km": 4.8,
+    "min_dwell_time_mins": 25,
+    "operating_hours": { "open": "09:30", "close": "21:00" },
+    "verification_status": "VERIFIED_OWNER",
+    "last_audited": "2026-09-12",
+    "community_rules": [
+      "Fresh sampling allowed upon request",
+      "Vacuum packaging available for long-distance transit"
+    ],
+    "highlights": ["Live wooden mallet pounding", "Zero refined sugar jaggery gajak", "Winter sesame brittle"]
+  },
+  {
+    "id": "poi_gwl_006",
+    "name": "Hazira Zari & Zardozi Embroidery Guild",
+    "hindiName": "हज़ीरा ज़री-ज़रदोज़ी कशीदाकारी संघ",
+    "category": "crafts",
+    "subCategory": "textile_embroidery",
+    "description": "Generational master artisans executing intricate gold and silver thread metallic embroidery on velvet and silk.",
+    "coordinates": { "lat": 26.2345, "lng": 78.2010 },
+    "distance_from_fort_km": 5.2,
+    "min_dwell_time_mins": 45,
+    "operating_hours": { "open": "11:00", "close": "18:30" },
+    "verification_status": "VERIFIED_OWNER",
+    "last_audited": "2026-08-30",
+    "community_rules": [
+      "Wash hands before touching display embroidery",
+      "Special orders require artisan consultation"
+    ],
+    "highlights": ["Ari and Zardosi needlework", "Metallic bullion thread craft", "Royal court replica motifs"]
+  },
+  {
+    "id": "poi_gwl_007",
+    "name": "Sarafa Traditional Lac & Silver Jewellery Guild",
+    "hindiName": "सराफ़ा पारंपरिक लाख एवं रजत आभूषण शिल्पी",
+    "category": "crafts",
+    "subCategory": "lac_jewellery",
+    "description": "Historic artisan bazaar shaping vibrant melted lac bangles and filigree silver ornaments over small open flames.",
+    "coordinates": { "lat": 26.2070, "lng": 78.1595 },
+    "distance_from_fort_km": 4.6,
+    "min_dwell_time_mins": 35,
+    "operating_hours": { "open": "12:00", "close": "20:30" },
+    "verification_status": "VERIFIED_AUDITOR",
+    "last_audited": "2026-09-05",
+    "community_rules": [
+      "Artisans heat lac on demand for custom sizing",
+      "Direct buy preserves heirloom lacquer techniques"
+    ],
+    "highlights": ["Live flame lacquer shaping", "Antique tribal silver filigree", "Customized bangle sizing"]
+  },
+  {
+    "id": "poi_gwl_008",
+    "name": "Daulat Ganj Traditional Clay Pottery & Terracotta Guild",
+    "hindiName": "दौलत गंज मृत्तिका एवं टेराकोटा शिल्पी",
+    "category": "crafts",
+    "subCategory": "terracotta_pottery",
+    "description": "Potters spinning unglazed Chambal clay water urns, garden terracotta, and festival votives on stone wheels.",
+    "coordinates": { "lat": 26.2012, "lng": 78.1630 },
+    "distance_from_fort_km": 5.1,
+    "min_dwell_time_mins": 30,
+    "operating_hours": { "open": "09:00", "close": "18:00" },
+    "verification_status": "VERIFIED_OWNER",
+    "last_audited": "2026-08-18",
+    "community_rules": [
+      "Visitors may attempt manual wheel spinning under artisan supervision",
+      "Fragile packaging provided"
+    ],
+    "highlights": ["Wheel-thrown terracotta pitchers", "Natural river silt processing", "Miniature clay toys"]
+  },
+  {
+    "id": "poi_gwl_009",
+    "name": "Morar Sun Temple & Heritage Artisan Gardens",
+    "hindiName": "मुरार सूर्य मंदिर एवं धरोहर शिल्प उद्यान",
+    "category": "heritage",
+    "subCategory": "architecture_and_stone",
+    "description": "Red sandstone temple complex modeled after Konark, surrounded by working master stone chisellers.",
+    "coordinates": { "lat": 26.2280, "lng": 78.2250 },
+    "distance_from_fort_km": 6.8,
+    "min_dwell_time_mins": 50,
+    "operating_hours": { "open": "06:30", "close": "19:00" },
+    "verification_status": "VERIFIED_AUDITOR",
+    "last_audited": "2026-07-22",
+    "community_rules": [
+      "Modest attire required within sanctum",
+      "Stone carving viewing area located at northern courtyard"
+    ],
+    "highlights": ["Intricate chariot sculpture", "Active sandstone sculptors", "Sunset optical alignment"]
+  },
+  {
+    "id": "poi_gwl_010",
+    "name": "Phool Bagh Heritage Bahodapur Folk Arts Centre",
+    "hindiName": "फूलबाग बहोड़ापुर लोक कला केंद्र",
+    "category": "music",
+    "subCategory": "folk_music_instruments",
+    "description": "Luthiers and acoustic craftsmen carving Shehnai, Sarangi, and Pakhawaj instruments from seasoned sheesham wood.",
+    "coordinates": { "lat": 26.2160, "lng": 78.1810 },
+    "distance_from_fort_km": 3.2,
+    "min_dwell_time_mins": 40,
+    "operating_hours": { "open": "11:00", "close": "18:00" },
+    "verification_status": "VERIFIED_OWNER",
+    "last_audited": "2026-08-27",
+    "community_rules": [
+      "Do not touch taut animal hide membranes without artisan permission",
+      "Tuning demonstrations scheduled hourly"
+    ],
+    "highlights": ["Handmade Pakhawaj drum tuning", "Sheesham wood seasoning craft", "Acoustic calibration room"]
+  },
+  {
+    "id": "poi_gwl_011",
+    "name": "Bahodapur Handloom Khadi Weaver Guild",
+    "hindiName": "बहोड़ापुर हथकरघा खादी बुनकर संघ",
+    "category": "crafts",
+    "subCategory": "organic_khadi",
+    "description": "Certified Khadi weavers producing handspun, natural indigo and madder root dyed organic cotton fabrics.",
+    "coordinates": { "lat": 26.2420, "lng": 78.1520 },
+    "distance_from_fort_km": 4.1,
+    "min_dwell_time_mins": 45,
+    "operating_hours": { "open": "10:00", "close": "17:30" },
+    "verification_status": "VERIFIED_OWNER",
+    "last_audited": "2026-09-08",
+    "community_rules": [
+      "Natural dye vat area open for inspection",
+      "KVIC certification seals attached to all fabric rolls"
+    ],
+    "highlights": ["Charkha yarn spinning", "Vegetable indigo dye vats", "Direct cooperative billing"]
+  },
+  {
+    "id": "poi_gwl_012",
+    "name": "Kotwali Petha & Gulab Jamun Traditional Confectioners",
+    "hindiName": "कोतवाली पारंपरिक पेठा एवं गुलाब जामुन",
+    "category": "culinary",
+    "subCategory": "artisanal_sweets",
+    "description": "Historic dessert crafters slowly simmering winter melon in alum water and frying giant mawa gulab jamuns in pure cow ghee.",
+    "coordinates": { "lat": 26.2120, "lng": 78.1650 },
+    "distance_from_fort_km": 3.9,
+    "min_dwell_time_mins": 25,
+    "operating_hours": { "open": "08:00", "close": "22:00" },
+    "verification_status": "VERIFIED_AUDITOR",
+    "last_audited": "2026-09-14",
+    "community_rules": [
+      "Served warm straight from the copper kadhai",
+      "Preservative-free; consume within 48 hours"
+    ],
+    "highlights": ["Kesar infused winter melon petha", "Warm mawa gulab jamun", "Heritage copper cauldron technique"]
+  }
+]
