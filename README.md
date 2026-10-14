@@ -2,7 +2,7 @@
 **AI Synergy Hackathon 2026 • Round 1 Submission**  
 **Team Identity:** Team Venator (ID: `60358412`) | ITM University Gwalior  
 **Selected Theme:** Theme 04 — Tourism: Beyond the Fort (Gwalior Micro-Corridor Pilot)  
-**Live Repository:** `https://github.com/ayankhan96686-create/Time-Aware-Digital-Discoverability-Beyond-the-Fort`
+**Live Repository:** `https://github.com/mohammadjubaid76-collab/AI-Powered-Discovery-of-Hidden-Cultural-Experiences-and-Local-Businesses`
 
 ---
 
@@ -79,8 +79,7 @@ Where:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/ayankhan96686-create/Time-Aware-Digital-Discoverability-Beyond-the-Fort.git
-cd time-aware-tourism-gwalior
+git clone https://github.com/mohammadjubaid76-collab/AI-Powered-Discovery-of-Hidden-Cultural-Experiences-and-Local-Businesses
 
 # Install dependencies
 npm install
@@ -100,7 +99,7 @@ npm test
 ```bash
 npm start
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+
 
 ---
 
@@ -147,7 +146,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 | Member Name | Institutional Affiliation | Project Role |
 | :--- | :--- | :--- |
-| **Mohammad Jubaid** | ITM University Gwalior | Team Lead & AI Architecture Specialist |
+| **Mohammad Jubaid** | ITM University Gwalior | Team Leader & AI Architecture Specialist |
 | **Ayan Khan** | ITM University Gwalior | Backend Systems & Deterministic Math Engine |
 | **Arjun Singh Bhadoriya** | ITM University Gwalior | Geospatial Engineering & Data Stewardship |
 | **Mohith Ch** | ITM University Gwalior | Frontend Architecture & Bento UI/UX Design |
